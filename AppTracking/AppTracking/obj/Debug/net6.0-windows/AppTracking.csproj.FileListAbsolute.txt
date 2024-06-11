@@ -14,3 +14,5 @@ E:\Internship - SchneiderElectric 2024\Efficient-tracking-of-software-applicatio
 E:\Internship - SchneiderElectric 2024\Efficient-tracking-of-software-applications-on-a-workstation\AppTracking\AppTracking\obj\Debug\net6.0-windows\AppTracking.pdb
 E:\Internship - SchneiderElectric 2024\Efficient-tracking-of-software-applications-on-a-workstation\AppTracking\AppTracking\obj\Debug\net6.0-windows\AppTracking.genruntimeconfig.cache
 E:\Internship - SchneiderElectric 2024\Efficient-tracking-of-software-applications-on-a-workstation\AppTracking\AppTracking\obj\Debug\net6.0-windows\ref\AppTracking.dll
+E:\Internship - SchneiderElectric 2024\Efficient-tracking-of-software-applications-on-a-workstation\AppTracking\AppTracking\obj\Debug\net6.0-windows\Interop.Microsoft.Office.Interop.Excel.dll
+E:\Internship - SchneiderElectric 2024\Efficient-tracking-of-software-applications-on-a-workstation\AppTracking\AppTracking\obj\Debug\net6.0-windows\AppTracking.csproj.ResolveComReference.cache
