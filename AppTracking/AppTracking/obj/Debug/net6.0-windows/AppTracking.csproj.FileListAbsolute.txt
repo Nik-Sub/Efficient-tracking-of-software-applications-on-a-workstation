@@ -3,7 +3,6 @@ E:\Internship - SchneiderElectric 2024\Efficient-tracking-of-software-applicatio
 E:\Internship - SchneiderElectric 2024\Efficient-tracking-of-software-applications-on-a-workstation\AppTracking\AppTracking\bin\Debug\net6.0-windows\AppTracking.runtimeconfig.json
 E:\Internship - SchneiderElectric 2024\Efficient-tracking-of-software-applications-on-a-workstation\AppTracking\AppTracking\bin\Debug\net6.0-windows\AppTracking.dll
 E:\Internship - SchneiderElectric 2024\Efficient-tracking-of-software-applications-on-a-workstation\AppTracking\AppTracking\bin\Debug\net6.0-windows\AppTracking.pdb
-E:\Internship - SchneiderElectric 2024\Efficient-tracking-of-software-applications-on-a-workstation\AppTracking\AppTracking\obj\Debug\net6.0-windows\AppTracking.Form1.resources
 E:\Internship - SchneiderElectric 2024\Efficient-tracking-of-software-applications-on-a-workstation\AppTracking\AppTracking\obj\Debug\net6.0-windows\AppTracking.csproj.GenerateResource.cache
 E:\Internship - SchneiderElectric 2024\Efficient-tracking-of-software-applications-on-a-workstation\AppTracking\AppTracking\obj\Debug\net6.0-windows\AppTracking.GeneratedMSBuildEditorConfig.editorconfig
 E:\Internship - SchneiderElectric 2024\Efficient-tracking-of-software-applications-on-a-workstation\AppTracking\AppTracking\obj\Debug\net6.0-windows\AppTracking.AssemblyInfoInputs.cache
