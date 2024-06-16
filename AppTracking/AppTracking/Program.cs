@@ -33,10 +33,10 @@ namespace AppTracking
             /*ApplicationConfiguration.Initialize();
             Application.Run(new Form1());*/
 
-            AppReader appReader = new AppReader(new WinAppReaderImplementation());
+            /*AppReader appReader = new AppReader(new WinAppReaderImplementation());
             List<Dictionary<string, string>> apps = appReader.getAppl();
 
-            Console.WriteLine(apps.Count);
+            Console.WriteLine(apps.Count);*/
 
             // Print the installed applications
             /*foreach (var app in apps)

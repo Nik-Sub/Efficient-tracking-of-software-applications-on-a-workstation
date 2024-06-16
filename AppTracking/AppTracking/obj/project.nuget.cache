@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "5KP/0ABA21uiaGuDZd5JoJz3cytXNGO/Qttg+Pn90LbUKqvL5hk/tdqXr7mFWFHRoXDrprdI66LkvTE8ivsBlA==",
+  "dgSpecHash": "8uQP8iJq8+2odAhQZgGrW+c4ajH8szxH40CGiEdSZqtUm96g4R84pnm76uE687VAMxv9faxKEIde5vSID9RBdQ==",
   "success": true,
   "projectFilePath": "E:\\Internship - SchneiderElectric 2024\\Efficient-tracking-of-software-applications-on-a-workstation\\AppTracking\\AppTracking\\AppTracking.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Nikola\\.nuget\\packages\\system.codedom\\8.0.0\\system.codedom.8.0.0.nupkg.sha512",
+    "C:\\Users\\Nikola\\.nuget\\packages\\system.management\\8.0.0\\system.management.8.0.0.nupkg.sha512"
+  ],
   "logs": []
 }
