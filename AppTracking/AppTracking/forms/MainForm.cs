@@ -2,9 +2,10 @@
 using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Drawing;
+using System.Globalization;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace AppTracking.forms
 {
@@ -48,14 +49,28 @@ namespace AppTracking.forms
             dataTable.Columns.Add("Display Name");
             dataTable.Columns.Add("Install Date");
             dataTable.Columns.Add("Version");
+            dataTable.Columns.Add("UpdateID");
+            dataTable.Columns.Add("UpdateDescription");
+            dataTable.Columns.Add("UpdateInstallDate");
 
             // Populate the DataTable with your data
             foreach (var app in apps)
             {
                 DataRow row = dataTable.NewRow();
                 row["Display Name"] = app["DisplayName"];
-                row["Install Date"] = app["InstallDate"];
+                string formattedDate = "";
+                if (app["InstallDate"] != null)
+                {
+                    DateTime date = DateTime.ParseExact(app["InstallDate"], "yyyyMMdd", CultureInfo.InvariantCulture);
+                    formattedDate = date.ToString("dd-MM-yyyy");
+                }
+                row["Install Date"] = formattedDate;
                 row["Version"] = app["DisplayVersion"];
+                row["UpdateID"] = app["UpdateID"];
+                row["UpdateDescription"] = app["UpdateDescription"];
+                row["UpdateInstallDate"] = app["UpdateInstallDate"];
+
+
                 dataTable.Rows.Add(row);
             }
 
@@ -92,8 +107,6 @@ namespace AppTracking.forms
             tableLayoutPanel.Controls.Add(filterTextBox, 1, 0);
             tableLayoutPanel.Controls.Add(filterButton, 2, 0);
             tableLayoutPanel.Controls.Add(button1, 3, 0);
-
-
         }
 
         private void Button1_Click(object sender, EventArgs e)
@@ -102,23 +115,12 @@ namespace AppTracking.forms
             printer.printReport(apps);
 
             MessageBox.Show("printReport is finished", "Print Report Finished", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
-        }
-
-        private void InitializeComponent()
-        {
-
         }
 
         private void FilterButton_Click(object sender, EventArgs e)
         {
             // Get the filter text from the TextBox
             string filterText = filterTextBox.Text.ToLower();
-
-            if (filterText == "")
-            {
-                dataGridView.DataSource = apps;
-            }
 
             // Filter the apps list based on the filter text
             List<Dictionary<string, string>> filteredApps = apps.Where(app =>
@@ -130,20 +132,32 @@ namespace AppTracking.forms
             filteredDataTable.Columns.Add("Display Name");
             filteredDataTable.Columns.Add("Install Date");
             filteredDataTable.Columns.Add("Version");
+            filteredDataTable.Columns.Add("UpdateID");
+            filteredDataTable.Columns.Add("UpdateDescription");
+            filteredDataTable.Columns.Add("UpdateInstallDate");
 
             // Populate the DataTable with the filtered data
             foreach (var app in filteredApps)
             {
                 DataRow row = filteredDataTable.NewRow();
                 row["Display Name"] = app["DisplayName"];
-                row["Install Date"] = app["InstallDate"];
+                string formattedDate = "";
+                if (app["InstallDate"] != null)
+                {
+                    DateTime date = DateTime.ParseExact(app["InstallDate"], "yyyyMMdd", CultureInfo.InvariantCulture);
+                    formattedDate = date.ToString("MM-dd-yyyy");
+                }
+                row["Install Date"] = formattedDate;
                 row["Version"] = app["DisplayVersion"];
+                row["UpdateID"] = app["UpdateID"];
+                row["UpdateDescription"] = app["UpdateDescription"];
+                row["UpdateInstallDate"] = app["UpdateInstallDate"];
+
                 filteredDataTable.Rows.Add(row);
             }
 
             // Set the DataSource of the DataGridView to the filtered DataTable
             dataGridView.DataSource = filteredDataTable;
         }
-
     }
 }

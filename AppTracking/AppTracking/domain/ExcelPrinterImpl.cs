@@ -1,6 +1,7 @@
 ﻿using Microsoft.Office.Interop.Excel;
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -22,6 +23,9 @@ namespace AppTracking.domain
             worksheet.Cells[1, 1] = "Display Name";
             worksheet.Cells[1, 2] = "Install Date";
             worksheet.Cells[1, 3] = "Version";
+            worksheet.Cells[1, 4] = "UpdateID";
+            worksheet.Cells[1, 5] = "UpdateDescription";
+            worksheet.Cells[1, 6] = "UpdateInstallDate";
             //worksheet.Cells[1, 4] = "Install Location";
 
             // Write data to the Excel sheet
@@ -29,8 +33,17 @@ namespace AppTracking.domain
             foreach (var app in apps)
             {
                 worksheet.Cells[row, 1] = app["DisplayName"];
-                worksheet.Cells[row, 2] = app["InstallDate"];
+                string formattedDate = "";
+                if (app["InstallDate"] != null)
+                {
+                    DateTime date = DateTime.ParseExact(app["InstallDate"], "yyyyMMdd", CultureInfo.InvariantCulture);
+                    formattedDate = date.ToString("MM-dd-yyyy");
+                }
+                worksheet.Cells[row, 2] = formattedDate;
                 worksheet.Cells[row, 3] = app["DisplayVersion"];
+                worksheet.Cells[row, 4] = app["UpdateID"];
+                worksheet.Cells[row, 5] = app["UpdateDescription"];
+                worksheet.Cells[row, 6] = app["UpdateInstallDate"];
                 //worksheet.Cells[row, 4] = app["InstallLocation"];
                 row++;
             }

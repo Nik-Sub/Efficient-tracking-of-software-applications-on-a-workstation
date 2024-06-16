@@ -16,3 +16,8 @@ E:\Internship - SchneiderElectric 2024\Efficient-tracking-of-software-applicatio
 E:\Internship - SchneiderElectric 2024\Efficient-tracking-of-software-applications-on-a-workstation\AppTracking\AppTracking\obj\Debug\net6.0-windows\Interop.Microsoft.Office.Interop.Excel.dll
 E:\Internship - SchneiderElectric 2024\Efficient-tracking-of-software-applications-on-a-workstation\AppTracking\AppTracking\obj\Debug\net6.0-windows\AppTracking.csproj.ResolveComReference.cache
 E:\Internship - SchneiderElectric 2024\Efficient-tracking-of-software-applications-on-a-workstation\AppTracking\AppTracking\obj\Debug\net6.0-windows\AppTracking.forms.MainForm.resources
+E:\Internship - SchneiderElectric 2024\Efficient-tracking-of-software-applications-on-a-workstation\AppTracking\AppTracking\bin\Debug\net6.0-windows\System.CodeDom.dll
+E:\Internship - SchneiderElectric 2024\Efficient-tracking-of-software-applications-on-a-workstation\AppTracking\AppTracking\bin\Debug\net6.0-windows\System.Management.dll
+E:\Internship - SchneiderElectric 2024\Efficient-tracking-of-software-applications-on-a-workstation\AppTracking\AppTracking\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\System.Management.dll
+E:\Internship - SchneiderElectric 2024\Efficient-tracking-of-software-applications-on-a-workstation\AppTracking\AppTracking\obj\Debug\net6.0-windows\AppTracking.csproj.AssemblyReference.cache
+E:\Internship - SchneiderElectric 2024\Efficient-tracking-of-software-applications-on-a-workstation\AppTracking\AppTracking\obj\Debug\net6.0-windows\AppTracking.csproj.CopyComplete
