@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Globalization;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -36,8 +37,15 @@ namespace AppTracking.domain
                 string formattedDate = "";
                 if (app["InstallDate"] != null)
                 {
-                    DateTime date = DateTime.ParseExact(app["InstallDate"], "yyyyMMdd", CultureInfo.InvariantCulture);
-                    formattedDate = date.ToString("MM-dd-yyyy");
+                    try
+                    {
+                        DateTime date = DateTime.ParseExact(app["InstallDate"], "yyyyMMdd", CultureInfo.InvariantCulture);
+                        formattedDate = date.ToString("dd-MM-yyyy");
+                    }
+                    catch (Exception e)
+                    {
+                        formattedDate = "";
+                    }
                 }
                 worksheet.Cells[row, 2] = formattedDate;
                 worksheet.Cells[row, 3] = app["DisplayVersion"];

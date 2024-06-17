@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using Microsoft.Win32;
 using System.Management;
+using System.Linq;
 
 class WinAppReaderImplementation : AppReaderImpl
 {

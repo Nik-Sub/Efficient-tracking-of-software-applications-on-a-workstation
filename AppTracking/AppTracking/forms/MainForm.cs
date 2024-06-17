@@ -61,8 +61,15 @@ namespace AppTracking.forms
                 string formattedDate = "";
                 if (app["InstallDate"] != null)
                 {
-                    DateTime date = DateTime.ParseExact(app["InstallDate"], "yyyyMMdd", CultureInfo.InvariantCulture);
-                    formattedDate = date.ToString("dd-MM-yyyy");
+                    try
+                    {
+                        DateTime date = DateTime.ParseExact(app["InstallDate"], "yyyyMMdd", CultureInfo.InvariantCulture);
+                        formattedDate = date.ToString("dd-MM-yyyy");
+                    }
+                    catch(Exception e)
+                    {
+                        formattedDate = "";
+                    }
                 }
                 row["Install Date"] = formattedDate;
                 row["Version"] = app["DisplayVersion"];
@@ -144,8 +151,15 @@ namespace AppTracking.forms
                 string formattedDate = "";
                 if (app["InstallDate"] != null)
                 {
-                    DateTime date = DateTime.ParseExact(app["InstallDate"], "yyyyMMdd", CultureInfo.InvariantCulture);
-                    formattedDate = date.ToString("MM-dd-yyyy");
+                    try
+                    {
+                        DateTime date = DateTime.ParseExact(app["InstallDate"], "yyyyMMdd", CultureInfo.InvariantCulture);
+                        formattedDate = date.ToString("dd-MM-yyyy");
+                    }
+                    catch (Exception ee)
+                    {
+                        formattedDate = "";
+                    }
                 }
                 row["Install Date"] = formattedDate;
                 row["Version"] = app["DisplayVersion"];

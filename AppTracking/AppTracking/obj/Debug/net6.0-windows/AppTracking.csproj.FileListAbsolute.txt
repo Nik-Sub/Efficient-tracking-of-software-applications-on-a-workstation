@@ -21,3 +21,27 @@ E:\Internship - SchneiderElectric 2024\Efficient-tracking-of-software-applicatio
 E:\Internship - SchneiderElectric 2024\Efficient-tracking-of-software-applications-on-a-workstation\AppTracking\AppTracking\obj\Debug\net6.0-windows\AppTracking.pdb
 E:\Internship - SchneiderElectric 2024\Efficient-tracking-of-software-applications-on-a-workstation\AppTracking\AppTracking\obj\Debug\net6.0-windows\AppTracking.genruntimeconfig.cache
 E:\Internship - SchneiderElectric 2024\Efficient-tracking-of-software-applications-on-a-workstation\AppTracking\AppTracking\obj\Debug\net6.0-windows\ref\AppTracking.dll
+C:\Users\pc\Desktop\projekatNikolaSubaric\Efficient-tracking-of-software-applications-on-a-workstation\AppTracking\AppTracking\bin\Debug\net6.0-windows\AppTracking.exe
+C:\Users\pc\Desktop\projekatNikolaSubaric\Efficient-tracking-of-software-applications-on-a-workstation\AppTracking\AppTracking\bin\Debug\net6.0-windows\AppTracking.deps.json
+C:\Users\pc\Desktop\projekatNikolaSubaric\Efficient-tracking-of-software-applications-on-a-workstation\AppTracking\AppTracking\bin\Debug\net6.0-windows\AppTracking.runtimeconfig.json
+C:\Users\pc\Desktop\projekatNikolaSubaric\Efficient-tracking-of-software-applications-on-a-workstation\AppTracking\AppTracking\bin\Debug\net6.0-windows\AppTracking.dll
+C:\Users\pc\Desktop\projekatNikolaSubaric\Efficient-tracking-of-software-applications-on-a-workstation\AppTracking\AppTracking\bin\Debug\net6.0-windows\AppTracking.pdb
+C:\Users\pc\Desktop\projekatNikolaSubaric\Efficient-tracking-of-software-applications-on-a-workstation\AppTracking\AppTracking\bin\Debug\net6.0-windows\System.CodeDom.dll
+C:\Users\pc\Desktop\projekatNikolaSubaric\Efficient-tracking-of-software-applications-on-a-workstation\AppTracking\AppTracking\bin\Debug\net6.0-windows\System.Management.dll
+C:\Users\pc\Desktop\projekatNikolaSubaric\Efficient-tracking-of-software-applications-on-a-workstation\AppTracking\AppTracking\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\System.Management.dll
+C:\Users\pc\Desktop\projekatNikolaSubaric\Efficient-tracking-of-software-applications-on-a-workstation\AppTracking\AppTracking\obj\Debug\net6.0-windows\AppTracking.csproj.AssemblyReference.cache
+C:\Users\pc\Desktop\projekatNikolaSubaric\Efficient-tracking-of-software-applications-on-a-workstation\AppTracking\AppTracking\obj\Debug\net6.0-windows\Interop.Microsoft.Office.Interop.Excel.dll
+C:\Users\pc\Desktop\projekatNikolaSubaric\Efficient-tracking-of-software-applications-on-a-workstation\AppTracking\AppTracking\obj\Debug\net6.0-windows\AppTracking.csproj.ResolveComReference.cache
+C:\Users\pc\Desktop\projekatNikolaSubaric\Efficient-tracking-of-software-applications-on-a-workstation\AppTracking\AppTracking\obj\Debug\net6.0-windows\AppTracking.forms.MainForm.resources
+C:\Users\pc\Desktop\projekatNikolaSubaric\Efficient-tracking-of-software-applications-on-a-workstation\AppTracking\AppTracking\obj\Debug\net6.0-windows\AppTracking.csproj.GenerateResource.cache
+C:\Users\pc\Desktop\projekatNikolaSubaric\Efficient-tracking-of-software-applications-on-a-workstation\AppTracking\AppTracking\obj\Debug\net6.0-windows\AppTracking.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pc\Desktop\projekatNikolaSubaric\Efficient-tracking-of-software-applications-on-a-workstation\AppTracking\AppTracking\obj\Debug\net6.0-windows\AppTracking.AssemblyInfoInputs.cache
+C:\Users\pc\Desktop\projekatNikolaSubaric\Efficient-tracking-of-software-applications-on-a-workstation\AppTracking\AppTracking\obj\Debug\net6.0-windows\AppTracking.AssemblyInfo.cs
+C:\Users\pc\Desktop\projekatNikolaSubaric\Efficient-tracking-of-software-applications-on-a-workstation\AppTracking\AppTracking\obj\Debug\net6.0-windows\AppTracking.csproj.CoreCompileInputs.cache
+C:\Users\pc\Desktop\projekatNikolaSubaric\Efficient-tracking-of-software-applications-on-a-workstation\AppTracking\AppTracking\obj\Debug\net6.0-windows\AppTracking.sourcelink.json
+C:\Users\pc\Desktop\projekatNikolaSubaric\Efficient-tracking-of-software-applications-on-a-workstation\AppTracking\AppTracking\obj\Debug\net6.0-windows\AppTrack.886EF0EA.Up2Date
+C:\Users\pc\Desktop\projekatNikolaSubaric\Efficient-tracking-of-software-applications-on-a-workstation\AppTracking\AppTracking\obj\Debug\net6.0-windows\AppTracking.dll
+C:\Users\pc\Desktop\projekatNikolaSubaric\Efficient-tracking-of-software-applications-on-a-workstation\AppTracking\AppTracking\obj\Debug\net6.0-windows\refint\AppTracking.dll
+C:\Users\pc\Desktop\projekatNikolaSubaric\Efficient-tracking-of-software-applications-on-a-workstation\AppTracking\AppTracking\obj\Debug\net6.0-windows\AppTracking.pdb
+C:\Users\pc\Desktop\projekatNikolaSubaric\Efficient-tracking-of-software-applications-on-a-workstation\AppTracking\AppTracking\obj\Debug\net6.0-windows\AppTracking.genruntimeconfig.cache
+C:\Users\pc\Desktop\projekatNikolaSubaric\Efficient-tracking-of-software-applications-on-a-workstation\AppTracking\AppTracking\obj\Debug\net6.0-windows\ref\AppTracking.dll

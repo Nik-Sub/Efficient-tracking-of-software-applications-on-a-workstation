@@ -1,11 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "8uQP8iJq8+2odAhQZgGrW+c4ajH8szxH40CGiEdSZqtUm96g4R84pnm76uE687VAMxv9faxKEIde5vSID9RBdQ==",
+  "dgSpecHash": "kNDTbo1sj8A=",
   "success": true,
-  "projectFilePath": "E:\\Internship - SchneiderElectric 2024\\Efficient-tracking-of-software-applications-on-a-workstation\\AppTracking\\AppTracking\\AppTracking.csproj",
+  "projectFilePath": "C:\\Users\\pc\\Desktop\\projekatNikolaSubaric\\Efficient-tracking-of-software-applications-on-a-workstation\\AppTracking\\AppTracking\\AppTracking.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Nikola\\.nuget\\packages\\system.codedom\\8.0.0\\system.codedom.8.0.0.nupkg.sha512",
-    "C:\\Users\\Nikola\\.nuget\\packages\\system.management\\8.0.0\\system.management.8.0.0.nupkg.sha512"
+    "C:\\Users\\pc\\.nuget\\packages\\system.codedom\\8.0.0\\system.codedom.8.0.0.nupkg.sha512",
+    "C:\\Users\\pc\\.nuget\\packages\\system.management\\8.0.0\\system.management.8.0.0.nupkg.sha512",
+    "C:\\Users\\pc\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\5.0.0\\microsoft.windowsdesktop.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\pc\\.nuget\\packages\\microsoft.netcore.app.ref\\5.0.0\\microsoft.netcore.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\pc\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\5.0.0\\microsoft.aspnetcore.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\pc\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.17\\microsoft.netcore.app.host.win-x64.5.0.17.nupkg.sha512"
   ],
   "logs": []
 }
