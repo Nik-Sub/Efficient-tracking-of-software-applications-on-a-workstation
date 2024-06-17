@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Globalization;
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
 using AppTracking.domain;
@@ -19,6 +20,16 @@ namespace AppTracking
         {
             // Allocate a console for the application
             //AllocConsole();
+            /*// Get the current culture and UI culture
+            CultureInfo currentCulture = CultureInfo.CurrentCulture;
+            CultureInfo currentUICulture = CultureInfo.CurrentUICulture;
+
+            // Print the culture information
+            Console.WriteLine("Current Culture: " + currentCulture.Name);
+            Console.WriteLine("Current UI Culture: " + currentUICulture.Name);
+            Console.WriteLine("Date format (short): " + currentCulture.DateTimeFormat.ShortDatePattern);
+            Console.WriteLine("Date format (long): " + currentCulture.DateTimeFormat.LongDatePattern);
+            Console.WriteLine("Time format: " + currentCulture.DateTimeFormat.LongTimePattern);*/
 
             /*// Instantiate your form
             Form1 form = new Form1();
