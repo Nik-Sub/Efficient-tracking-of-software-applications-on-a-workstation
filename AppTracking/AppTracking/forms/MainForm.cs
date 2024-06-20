@@ -5,115 +5,187 @@ using System.Data;
 using System.Drawing;
 using System.Globalization;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Windows.Forms;
 
 namespace AppTracking.forms
 {
     public class MainForm : Form
     {
+
+        [DllImport("kernel32.dll", SetLastError = true)]
+        [return: MarshalAs(UnmanagedType.Bool)]
+        static extern bool AllocConsole();
+
+        [DllImport("kernel32.dll", SetLastError = true)]
+        [return: MarshalAs(UnmanagedType.Bool)]
+        static extern bool FreeConsole();
+
         private DataGridView dataGridView;
         private Button button1;
         private List<Dictionary<string, string>> apps = null;
         private TextBox filterTextBox;
         private Button filterButton;
 
-        public MainForm()
+        public MainForm(string[] args)
         {
-            this.Text = "Installed Applications";
-            this.Size = new Size(800, 600);
-
-            // Create a TableLayoutPanel with three columns
-            TableLayoutPanel tableLayoutPanel = new TableLayoutPanel
-            {
-                Dock = DockStyle.Fill,
-                ColumnCount = 4
-            };
-            tableLayoutPanel.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 60)); // 60% for the DataGridView
-            tableLayoutPanel.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 20)); // 20% for the filter text box
-            tableLayoutPanel.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 20)); // 20% for the filter button
-            this.Controls.Add(tableLayoutPanel);
-
-            // Create and configure the DataGridView
-            dataGridView = new DataGridView
-            {
-                Dock = DockStyle.Fill,
-                AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill // Fill the available space
-            };
-            tableLayoutPanel.Controls.Add(dataGridView, 0, 0);
-
             AppReader appReader = new AppReader(new WinAppReaderImplementation());
             apps = appReader.getAppl();
 
-            // Create a DataTable to hold the data
-            DataTable dataTable = new DataTable();
-            dataTable.Columns.Add("Display Name");
-            dataTable.Columns.Add("Install Date");
-            dataTable.Columns.Add("Version");
-            dataTable.Columns.Add("UpdateID");
-            dataTable.Columns.Add("UpdateDescription");
-            dataTable.Columns.Add("UpdateInstallDate");
-
-            // Populate the DataTable with your data
-            foreach (var app in apps)
+            if (args.Length < 1)
             {
-                DataRow row = dataTable.NewRow();
-                row["Display Name"] = app["DisplayName"];
-                string formattedDate = "";
-                if (app["InstallDate"] != null)
+                this.Text = "Installed Applications";
+                this.Size = new Size(800, 600);
+
+                // Create a TableLayoutPanel with three columns
+                TableLayoutPanel tableLayoutPanel = new TableLayoutPanel
                 {
-                    try
+                    Dock = DockStyle.Fill,
+                    ColumnCount = 4
+                };
+                tableLayoutPanel.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 60)); // 60% for the DataGridView
+                tableLayoutPanel.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 20)); // 20% for the filter text box
+                tableLayoutPanel.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 20)); // 20% for the filter button
+                this.Controls.Add(tableLayoutPanel);
+
+                // Create and configure the DataGridView
+                dataGridView = new DataGridView
+                {
+                    Dock = DockStyle.Fill,
+                    AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill // Fill the available space
+                };
+                tableLayoutPanel.Controls.Add(dataGridView, 0, 0);
+
+                // Create a DataTable to hold the data
+                DataTable dataTable = new DataTable();
+                dataTable.Columns.Add("Display Name");
+                dataTable.Columns.Add("Install Date");
+                dataTable.Columns.Add("Version");
+                dataTable.Columns.Add("UpdateID");
+                dataTable.Columns.Add("UpdateDescription");
+                dataTable.Columns.Add("UpdateInstallDate");
+
+                // Populate the DataTable with your data
+                foreach (var app in apps)
+                {
+                    DataRow row = dataTable.NewRow();
+                    row["Display Name"] = app["DisplayName"];
+                    string formattedDate = "";
+                    if (app["InstallDate"] != null)
                     {
-                        DateTime date = DateTime.ParseExact(app["InstallDate"], "yyyyMMdd", CultureInfo.InvariantCulture);
-                        formattedDate = date.ToString("dd-MM-yyyy");
+                        try
+                        {
+                            DateTime date = DateTime.ParseExact(app["InstallDate"], "yyyyMMdd", CultureInfo.InvariantCulture);
+                            formattedDate = date.ToString("dd-MM-yyyy");
+                        }
+                        catch (Exception e)
+                        {
+                            formattedDate = "";
+                        }
                     }
-                    catch(Exception e)
-                    {
-                        formattedDate = "";
-                    }
+                    row["Install Date"] = formattedDate;
+                    row["Version"] = app["DisplayVersion"];
+                    row["UpdateID"] = app["UpdateID"];
+                    row["UpdateDescription"] = app["UpdateDescription"];
+                    row["UpdateInstallDate"] = app["UpdateInstallDate"];
+
+
+                    dataTable.Rows.Add(row);
                 }
-                row["Install Date"] = formattedDate;
-                row["Version"] = app["DisplayVersion"];
-                row["UpdateID"] = app["UpdateID"];
-                row["UpdateDescription"] = app["UpdateDescription"];
-                row["UpdateInstallDate"] = app["UpdateInstallDate"];
 
+                // Set the DataSource of the DataGridView to the DataTable
+                dataGridView.DataSource = dataTable;
 
-                dataTable.Rows.Add(row);
+                // Create and configure the button
+                button1 = new Button
+                {
+                    Text = "Print",
+                    AutoSize = true,
+                    TextAlign = ContentAlignment.MiddleCenter
+                };
+
+                button1.Click += Button1_Click;
+
+                // Create and configure the filter TextBox
+                filterTextBox = new TextBox
+                {
+                    PlaceholderText = "Enter filter text",
+                    Dock = DockStyle.Fill
+                };
+
+                // Create and configure the filter Button
+                filterButton = new Button
+                {
+                    Text = "Filter",
+                    AutoSize = true,
+                    TextAlign = ContentAlignment.MiddleCenter
+                };
+                filterButton.Click += FilterButton_Click;
+
+                // Add controls to the TableLayoutPanel
+                tableLayoutPanel.Controls.Add(filterTextBox, 1, 0);
+                tableLayoutPanel.Controls.Add(filterButton, 2, 0);
+                tableLayoutPanel.Controls.Add(button1, 3, 0);
             }
-
-            // Set the DataSource of the DataGridView to the DataTable
-            dataGridView.DataSource = dataTable;
-
-            // Create and configure the button
-            button1 = new Button
+            else
             {
-                Text = "Print",
-                AutoSize = true,
-                TextAlign = ContentAlignment.MiddleCenter
-            };
+                AllocConsole();
+                // Redirect standard output to the new console
+                Console.SetOut(new System.IO.StreamWriter(Console.OpenStandardOutput()) { AutoFlush = true });
+                Console.WriteLine(
+                "{0,-80}{1,-15}{2,-15}{3,-15}{4,-25}{5,-25}",
+                "Display Name",
+                "Install Date",
+                "Version",
+                "UpdateID",
+                "UpdateDescription",
+                "Update Install Date"
+            );
+                foreach (var app in apps)
+                {
+                    string displayName = app["DisplayName"];
+                    string installDate = "";
+                    if (app["InstallDate"] != null)
+                    {
+                        try
+                        {
+                            DateTime date = DateTime.ParseExact(app["InstallDate"], "yyyyMMdd", CultureInfo.InvariantCulture);
+                            installDate = date.ToString("dd-MM-yyyy");
+                        }
+                        catch (Exception)
+                        {
+                            installDate = "";
+                        }
+                    }
+                    string version = app["DisplayVersion"];
+                    string updateId = app["UpdateID"];
+                    string updateDescription = app["UpdateDescription"];
+                    string updateInstallDate = app["UpdateInstallDate"];
 
-            button1.Click += Button1_Click;
+                    // Print the item's details
+                    Console.WriteLine(
+                    "{0,-80}{1,-15}{2,-15}{3,-15}{4,-25}{5,-25}",
+                    displayName,
+                    installDate,
+                    version,
+                    updateId,
+                    updateDescription,
+                    updateInstallDate
+                );
+                }
+                Console.ReadKey();
+                //return;
 
-            // Create and configure the filter TextBox
-            filterTextBox = new TextBox
-            {
-                PlaceholderText = "Enter filter text",
-                Dock = DockStyle.Fill
-            };
 
-            // Create and configure the filter Button
-            filterButton = new Button
-            {
-                Text = "Filter",
-                AutoSize = true,
-                TextAlign = ContentAlignment.MiddleCenter
-            };
-            filterButton.Click += FilterButton_Click;
 
-            // Add controls to the TableLayoutPanel
-            tableLayoutPanel.Controls.Add(filterTextBox, 1, 0);
-            tableLayoutPanel.Controls.Add(filterButton, 2, 0);
-            tableLayoutPanel.Controls.Add(button1, 3, 0);
+
+
+                // Free the console before exiting
+                FreeConsole();
+
+                //return; // Exit after printing output
+                Environment.Exit(0);
+            }
         }
 
         private void Button1_Click(object sender, EventArgs e)

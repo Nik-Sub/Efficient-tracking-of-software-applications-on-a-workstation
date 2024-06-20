@@ -16,10 +16,10 @@ namespace AppTracking
         /// The main entry point for the application.
         /// </summary>
         [STAThread]
-        static void Main()
+        static void Main(string[] args)
         {
             // Allocate a console for the application
-            //AllocConsole();
+            //
             /*// Get the current culture and UI culture
             CultureInfo currentCulture = CultureInfo.CurrentCulture;
             CultureInfo currentUICulture = CultureInfo.CurrentUICulture;
@@ -36,10 +36,13 @@ namespace AppTracking
 
             // Run the form
             System.Windows.Forms.Application.Run(form);*/
-
+            //AllocConsole();
+            //Console.WriteLine(args.Length);
             System.Windows.Forms.Application.EnableVisualStyles();
             System.Windows.Forms.Application.SetCompatibleTextRenderingDefault(false);
-            System.Windows.Forms.Application.Run(new MainForm());
+            System.Windows.Forms.Application.Run(new MainForm(args));
+            
+
 
             /*ApplicationConfiguration.Initialize();
             Application.Run(new Form1());*/
