@@ -22,3 +22,26 @@ C:\Users\pc\Desktop\projekatNikolaSubaric\Efficient-tracking-of-software-applica
 C:\Users\pc\Desktop\projekatNikolaSubaric\Efficient-tracking-of-software-applications-on-a-workstation\AppTracking\AppTracking\obj\Debug\net5.0-windows7.0\AppTracking.pdb
 C:\Users\pc\Desktop\projekatNikolaSubaric\Efficient-tracking-of-software-applications-on-a-workstation\AppTracking\AppTracking\obj\Debug\net5.0-windows7.0\AppTracking.genruntimeconfig.cache
 C:\Users\pc\Desktop\projekatNikolaSubaric\Efficient-tracking-of-software-applications-on-a-workstation\AppTracking\AppTracking\obj\Debug\net5.0-windows7.0\ref\AppTracking.dll
+E:\Internship - SchneiderElectric 2024\Efficient-tracking-of-software-applications-on-a-workstation\AppTracking\AppTracking\bin\Debug\net5.0-windows7.0\AppTracking.exe
+E:\Internship - SchneiderElectric 2024\Efficient-tracking-of-software-applications-on-a-workstation\AppTracking\AppTracking\bin\Debug\net5.0-windows7.0\AppTracking.deps.json
+E:\Internship - SchneiderElectric 2024\Efficient-tracking-of-software-applications-on-a-workstation\AppTracking\AppTracking\bin\Debug\net5.0-windows7.0\AppTracking.runtimeconfig.json
+E:\Internship - SchneiderElectric 2024\Efficient-tracking-of-software-applications-on-a-workstation\AppTracking\AppTracking\bin\Debug\net5.0-windows7.0\AppTracking.runtimeconfig.dev.json
+E:\Internship - SchneiderElectric 2024\Efficient-tracking-of-software-applications-on-a-workstation\AppTracking\AppTracking\bin\Debug\net5.0-windows7.0\AppTracking.dll
+E:\Internship - SchneiderElectric 2024\Efficient-tracking-of-software-applications-on-a-workstation\AppTracking\AppTracking\bin\Debug\net5.0-windows7.0\AppTracking.pdb
+E:\Internship - SchneiderElectric 2024\Efficient-tracking-of-software-applications-on-a-workstation\AppTracking\AppTracking\bin\Debug\net5.0-windows7.0\System.CodeDom.dll
+E:\Internship - SchneiderElectric 2024\Efficient-tracking-of-software-applications-on-a-workstation\AppTracking\AppTracking\bin\Debug\net5.0-windows7.0\System.Management.dll
+E:\Internship - SchneiderElectric 2024\Efficient-tracking-of-software-applications-on-a-workstation\AppTracking\AppTracking\obj\Debug\net5.0-windows7.0\AppTracking.csproj.AssemblyReference.cache
+E:\Internship - SchneiderElectric 2024\Efficient-tracking-of-software-applications-on-a-workstation\AppTracking\AppTracking\obj\Debug\net5.0-windows7.0\Interop.Microsoft.Office.Interop.Excel.dll
+E:\Internship - SchneiderElectric 2024\Efficient-tracking-of-software-applications-on-a-workstation\AppTracking\AppTracking\obj\Debug\net5.0-windows7.0\AppTracking.csproj.ResolveComReference.cache
+E:\Internship - SchneiderElectric 2024\Efficient-tracking-of-software-applications-on-a-workstation\AppTracking\AppTracking\obj\Debug\net5.0-windows7.0\AppTracking.forms.MainForm.resources
+E:\Internship - SchneiderElectric 2024\Efficient-tracking-of-software-applications-on-a-workstation\AppTracking\AppTracking\obj\Debug\net5.0-windows7.0\AppTracking.csproj.GenerateResource.cache
+E:\Internship - SchneiderElectric 2024\Efficient-tracking-of-software-applications-on-a-workstation\AppTracking\AppTracking\obj\Debug\net5.0-windows7.0\AppTracking.GeneratedMSBuildEditorConfig.editorconfig
+E:\Internship - SchneiderElectric 2024\Efficient-tracking-of-software-applications-on-a-workstation\AppTracking\AppTracking\obj\Debug\net5.0-windows7.0\AppTracking.AssemblyInfoInputs.cache
+E:\Internship - SchneiderElectric 2024\Efficient-tracking-of-software-applications-on-a-workstation\AppTracking\AppTracking\obj\Debug\net5.0-windows7.0\AppTracking.AssemblyInfo.cs
+E:\Internship - SchneiderElectric 2024\Efficient-tracking-of-software-applications-on-a-workstation\AppTracking\AppTracking\obj\Debug\net5.0-windows7.0\AppTracking.csproj.CoreCompileInputs.cache
+E:\Internship - SchneiderElectric 2024\Efficient-tracking-of-software-applications-on-a-workstation\AppTracking\AppTracking\obj\Debug\net5.0-windows7.0\AppTracking.csproj.CopyComplete
+E:\Internship - SchneiderElectric 2024\Efficient-tracking-of-software-applications-on-a-workstation\AppTracking\AppTracking\obj\Debug\net5.0-windows7.0\AppTracking.dll
+E:\Internship - SchneiderElectric 2024\Efficient-tracking-of-software-applications-on-a-workstation\AppTracking\AppTracking\obj\Debug\net5.0-windows7.0\refint\AppTracking.dll
+E:\Internship - SchneiderElectric 2024\Efficient-tracking-of-software-applications-on-a-workstation\AppTracking\AppTracking\obj\Debug\net5.0-windows7.0\AppTracking.pdb
+E:\Internship - SchneiderElectric 2024\Efficient-tracking-of-software-applications-on-a-workstation\AppTracking\AppTracking\obj\Debug\net5.0-windows7.0\AppTracking.genruntimeconfig.cache
+E:\Internship - SchneiderElectric 2024\Efficient-tracking-of-software-applications-on-a-workstation\AppTracking\AppTracking\obj\Debug\net5.0-windows7.0\ref\AppTracking.dll
