@@ -10,6 +10,14 @@ The IDE used for building this app is Visual Studio 2022. To run this app, you n
 2. Right-click on the Visual Studio 2022 shortcut and select "Run as administrator".
 3. Open the project in Visual Studio 2022.
 4. Build and run the application.
+   OR
+1. Open BUILD-.NET5.0
+2. Run AppTracking.exe file as administrator
+   OR
+1. Open CMD
+2. Place yourself inside BUILD-.NET5.0 folder
+3. Run command:
+      AppTracking.exe -a
 
 ## Features
 - Track installed software and their hotfixes.
